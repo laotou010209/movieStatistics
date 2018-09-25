@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="areaNameWeb" />
+        <module name="movieData" />
+        <module name="movieNameWeb" />
+        <module name="rmAreaName" />
+        <module name="rmMovieName" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="areaNameWeb" target="1.7" />
+      <module name="mapreduce01" target="1.7" />
+      <module name="mapreduce1" target="1.7" />
+      <module name="movieData" target="1.7" />
+      <module name="movieNameWeb" target="1.7" />
+      <module name="movieStatistics" target="1.8" />
+      <module name="movieWeb" target="1.7" />
+      <module name="rmAreaName" target="1.7" />
+      <module name="rmMovieName" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

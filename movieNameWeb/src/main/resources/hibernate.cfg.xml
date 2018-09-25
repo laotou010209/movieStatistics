@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- 方言配置 -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <!-- 在控制台打印sql配置 -->
+        <property name="hibernate.show_sql">true</property>
+        <!--格式化sql-->
+        <property name="hibernate.format_sql">true</property>
+        <!-- 自动建表:当表不存在，建表；如果存在，则更新表 -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!--&lt;!&ndash; 开启二级缓存 &ndash;&gt;-->
+        <!--<property name="hibernate.cache.use_second_level_cache">true</property>-->
+        <!--&lt;!&ndash; 配置二级缓存的应用商 &ndash;&gt;-->
+        <!--<property name="hibernate.cache.region.factory_class">-->
+            <!--org.hibernate.cache.ehcache.EhCacheRegionFactory-->
+        <!--</property>-->
+        <mapping class="com.laotou.entity.MovieArea"/>
+    </session-factory>
+
+</hibernate-configuration>

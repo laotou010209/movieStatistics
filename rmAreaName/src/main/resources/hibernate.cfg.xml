@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+        <!-- 数据源配置 -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://master:3306/movie</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Yfb010209</property>
+        <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <!-- 在控制台打印SQL配置 -->
+        <property name="hibernate.show_sql">true</property>
+        <!-- 格式化SQL语句，让控制台的SQL更美观 -->
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.id.new_generator_mappings">false</property>
+        <!-- 自动创建更新表结构 -->
+        <!-- create：每次加载核心配置文件，会重新删除所有表并重新创建所有表 -->
+        <!-- update:对于已经存在 的字段不会做任何修改，只会添加不存在的字段，也不会删除不需要的字段 -->
+        <property name="hibernate.hbm2ddl.auto">create</property>
+
+        <!-- 开启二级缓存 -->
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <!-- 配置二级缓存的应用商 -->
+        <property name="hibernate.cache.region.factory_class">
+            org.hibernate.cache.ehcache.EhCacheRegionFactory
+        </property>
+        <!-- 加载映射文件 -->
+        <mapping class="com.laotou.entity.MovieArea" />
+    </session-factory>
+
+</hibernate-configuration>

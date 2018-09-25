@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/areaNameWeb/areaNameWeb.iml" filepath="$PROJECT_DIR$/areaNameWeb/areaNameWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movieData/movieData.iml" filepath="$PROJECT_DIR$/movieData/movieData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movieNameWeb/movieNameWeb.iml" filepath="$PROJECT_DIR$/movieNameWeb/movieNameWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movieStatistics.iml" filepath="$PROJECT_DIR$/movieStatistics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmAreaName/rmAreaName.iml" filepath="$PROJECT_DIR$/rmAreaName/rmAreaName.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmMovieName/rmMovieName.iml" filepath="$PROJECT_DIR$/rmMovieName/rmMovieName.iml" />
+    </modules>
+  </component>
+</project>
